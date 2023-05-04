@@ -7,7 +7,7 @@ namespace WeekdayFinder.Tests
   {
     [TestClass]
 
-    public class FindDayTest
+    public class FindDayTests
     {
       // [TestMethod]
       // public void DateConstructor_CreatesInstanceOfDate_Date()
@@ -20,18 +20,20 @@ namespace WeekdayFinder.Tests
 
       [TestMethod]
 
-      public void DayOfWeek_UseInputToGetDay_FindDay()
+      public void FindDay_UseInputToGetDay_FindDay()
       {
         //Arrange
-        FindDay inputdate = new FindDay();
-        inputdate.GetDate(1984, 6, 2);
-        string dateInstance = "06/02/1984";
+        FindDay inputDate = new FindDay();
+        // Console.WriteLine("check 2 " inputDate);
+        string dateInstance = inputDate.GetDate(1984, 6, 1);
+        string dateTest = "Friday";
+        Console.WriteLine("check " + inputDate);
         //Act
-        string result = inputdate.ToString();
-        Console.WriteLine("line 3 " + dateInstance);
-        Console.WriteLine("line 4 " + result);
+        string result = dateInstance.ToString();
+        Console.WriteLine("line 3 " + dateTest);
+        // Console.WriteLine("line 4 " + result);
         // Assert
-        Assert.AreEqual(dateInstance, result);
+        Assert.AreEqual(dateTest, result);
       }
 
 
