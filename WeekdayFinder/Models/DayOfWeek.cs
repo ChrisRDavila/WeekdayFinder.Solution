@@ -11,9 +11,9 @@ namespace WeekdayFinder.Models
     public string GetDate(int year, int month, int day)
     {
       DateOnly inputDate = new DateOnly(year, month, day);
-      Console.WriteLine("line 1 " + inputDate);
+      // Console.WriteLine("line 1 " + inputDate);
       string outputString = inputDate.ToString("dddd");
-      Console.WriteLine("line 2 " + outputString);
+      // Console.WriteLine("line 2 " + outputString);
       return outputString;
       
     }

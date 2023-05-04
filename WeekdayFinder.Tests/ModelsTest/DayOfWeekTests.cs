@@ -25,12 +25,12 @@ namespace WeekdayFinder.Tests
         //Arrange
         FindDay inputDate = new FindDay();
         // Console.WriteLine("check 2 " inputDate);
-        string dateInstance = inputDate.GetDate(1984, 6, 1);
+        string dateInstance = inputDate.GetDate(1985, 5, 31);
         string dateTest = "Friday";
-        Console.WriteLine("check " + inputDate);
+        // Console.WriteLine("check " + inputDate);
         //Act
         string result = dateInstance.ToString();
-        Console.WriteLine("line 3 " + dateTest);
+        // Console.WriteLine("line 3 " + dateTest);
         // Console.WriteLine("line 4 " + result);
         // Assert
         Assert.AreEqual(dateTest, result);
