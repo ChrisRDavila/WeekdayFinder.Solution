@@ -23,13 +23,13 @@ namespace WeekdayFinder.Tests
       public void DayOfWeek_UseInputToGetDay_FindDay()
       {
         //Arrange
-        FindDay inputDate = new FindDay();
-        inputDate.GetDate(1984, 6, 2);
-        string dateInstance = "6/2/1984";
+        FindDay inputdate = new FindDay();
+        inputdate.GetDate(1984, 6, 2);
+        string dateInstance = "06/02/1984";
         //Act
-        string result = inputDate.ToString();
-        Console.WriteLine(dateInstance);
-        // Console.WriteLine(result);
+        string result = inputdate.ToString();
+        Console.WriteLine("line 3 " + dateInstance);
+        Console.WriteLine("line 4 " + result);
         // Assert
         Assert.AreEqual(dateInstance, result);
       }
